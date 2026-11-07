@@ -1,0 +1,29 @@
+{
+  "name": "lumion-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lumion Robotics API: telemetry ingestion and dashboard data",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/dbInit.js",
+    "db:seed": "node scripts/seed.js",
+    "db:setup": "node scripts/dbInit.js && node scripts/seed.js",
+    "sim": "node scripts/simulator.js",
+    "ai": "node scripts/mockAi.js",
+    "test": "node --test"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^5.3.0",
+    "pg": "^8.11.5",
+    "zod": "^3.23.8"
+  }
+}

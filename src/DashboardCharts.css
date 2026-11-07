@@ -1,0 +1,87 @@
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.chart-card {
+  min-width: 0;
+  padding: 2rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-header h3 {
+  margin: 0;
+  color: var(--text-h);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.chart-header select {
+  padding: 0.7rem 1rem;
+  color: var(--text);
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  outline: none;
+}
+
+.chart-container {
+  width: 100%;
+  height: 26rem;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+.chart-legend span {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.chart-legend i {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.3rem;
+}
+
+.legend-mowing {
+  background-color: var(--chart-purple);
+}
+
+.legend-charging {
+  background-color: var(--chart-orange);
+}
+
+.legend-actual {
+  background-color: var(--chart-purple);
+}
+
+.legend-predicted {
+  background-color: var(--chart-orange);
+}
+
+@media (max-width: 1000px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

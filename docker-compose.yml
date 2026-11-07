@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16
+    container_name: lumion-db
+    # Days in the charts are cut at midnight of this timezone.
+    # Change it to your own timezone (before the first start) if needed.
+    command: ["postgres", "-c", "timezone=${DB_TIMEZONE:-Europe/Helsinki}"]
+    environment:
+      POSTGRES_USER: lumion
+      POSTGRES_PASSWORD: lumion_dev
+      POSTGRES_DB: lumion
+    ports:
+      - "5433:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lumion -d lumion"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  dbdata:

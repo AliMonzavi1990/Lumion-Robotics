@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1213.587 1213.587">
+  <defs>
+    <style>
+      .cls-1{fill:#7248fb}
+      .cls-2{fill:#f4f5fb}
+      .cls-3{fill:#fb923c}
+      .cls-4{fill:none;stroke:#ab67a2;stroke-width:64.516;stroke-miterlimit:10}
+    </style>
+    <clipPath id="clip-path-1">
+      <path d="M508.731 434.016 C508.731 321.271 600.128 229.873 712.873 229.873 C825.618 229.873 917.016 321.271 917.016 434.016 C917.016 546.761 825.618 638.159 712.873 638.159 C600.128 638.159 508.731 546.761 508.731 434.016 Z"/>
+    </clipPath>
+  </defs>
+  <title>Artboard 1</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <path d="M323.808 0 L889.779 0 C1068.613 0 1213.587 144.974 1213.587 323.808 L1213.587 889.779 C1213.587 1068.613 1068.613 1213.587 889.779 1213.587 L323.808 1213.587 C144.974 1213.587 0 1068.613 0 889.779 L0 323.808 C0 144.974 144.974 0 323.808 0 Z" class="cls-1"/>
+      <g>
+        <polygon points="296.571,808.53 296.571,260.839 471.755,260.839 471.755,808.53 788.915,808.53 788.915,983.714 296.571,983.714" class="cls-2"/>
+        <circle cx="712.873" cy="434.016" r="114.062" class="cls-3"/>
+        <g>
+          <circle cx="712.873" cy="434.016" r="204.143" class="cls-4" clip-path="url(#clip-path-1)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

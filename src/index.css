@@ -1,0 +1,173 @@
+:root {
+  /* Backgrounds */
+  --bg: #0f1020;
+  --card: #191a2e;
+  --panel: #20223a;
+  --sidebar: #191a2e;
+
+  /* Text */
+  --text: #b8b7d0;
+  --text-h: #f1f0ff;
+  --button: #f1f0ff;
+
+  /* Borders */
+  --border: #302f4b;
+
+  /* Brand */
+  --accent: #6d3df0;
+  --accent-bg: #2b2450;
+  --accent-border: #4f46e5;
+
+  /* Status colors */
+  --green: #34d399;
+  --blue: #38bdf8;
+  --orange: #fb923c;
+  --red: #fb7185;
+
+  /* Charts */
+  --chart-purple: #a78bfa;
+  --chart-blue: #38bdf8;
+  --chart-green: #34d399;
+  --chart-orange: #fb923c;
+
+  /* Surfaces and states (used by tables, cards and dialogs) */
+  --on-accent: #ffffff;
+  --row-hover: #2b2765;
+  --icon-bg: rgba(78, 70, 229, 0.4);
+  --green-bg: hsla(158, 64%, 52%, 0.4);
+  --red-bg: hsla(351, 95%, 71%, 0.4);
+
+  /* Typography */
+  --main: "Poppins", system-ui, "Segoe UI", sans-serif;
+  --heading: Inter, system-ui, "Segoe UI", sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  /* Effects */
+  --shadow: 0 12px 32px rgb(0 0 0 / 18%);
+  --radius-card: 20px;
+  --radius-app: 28px;
+
+  color-scheme: dark;
+  font-family: var(--main);
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML */
+html {
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--main);
+  font-size: 1.5rem;
+  color: var(--text);
+  background-image: linear-gradient(135deg, #9708cc 10%, #43cbff 100%);
+}
+
+/* React root */
+#root {
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Form elements */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  padding: 1rem 2rem;
+  border-radius: 30rem;
+  color: var(--text-h);
+  background-color: var(--sidebar);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-h);
+  font-family: var(--heading);
+  margin: 0;
+}
+
+/* Media */
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   Day mode (light theme)
+   Night mode is the default theme defined in :root above.
+========================= */
+:root[data-theme="light"] {
+  --bg: #f3f4fb;
+  --card: #ffffff;
+  --panel: #eef0f8;
+  --sidebar: #ffffff;
+
+  --text: #5b5d7a;
+  --text-h: #1c1d4d;
+  --border: #e2e4f0;
+
+  --accent-bg: #efeafe;
+
+  --green: #16a34a;
+  --blue: #0284c7;
+  --orange: #ea580c;
+  --red: #e11d48;
+
+  --chart-purple: #7c4dff;
+  --chart-blue: #0284c7;
+  --chart-green: #16a34a;
+  --chart-orange: #f97316;
+
+  --row-hover: #efeafe;
+  --icon-bg: rgba(109, 61, 240, 0.12);
+  --green-bg: hsla(158, 64%, 40%, 0.16);
+  --red-bg: hsla(351, 95%, 50%, 0.12);
+
+  --shadow: 0 12px 32px rgb(31 33 90 / 10%);
+  color-scheme: light;
+}
