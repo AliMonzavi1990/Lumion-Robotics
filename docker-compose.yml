@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: lumion_dev
       POSTGRES_DB: lumion
     ports:
-      - "5433:5432"
+      - "15432:5432"
     volumes:
       - dbdata:/var/lib/postgresql/data
     healthcheck:
